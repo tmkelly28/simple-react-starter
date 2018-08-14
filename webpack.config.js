@@ -1,7 +1,7 @@
 const path = require('path')
 
 module.exports = {
-  entry: './components/index.js',
+  entry: ['babel-polyfill', './components/index.js'],
   mode: 'development',
   output: {
     path: path.join(__dirname, 'public'),
